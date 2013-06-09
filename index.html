@@ -1,50 +1,46 @@
-<!DOCTYPE html>
-<html>
+---
+title: I'm ravenous for CSS.
+layout: home
+page_class: page-home
+---
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Heroicbodhisattva : " />
+            <div class="site-introduction">
+                <h2 class="site-introduction-title">Well, you're probably wondering why the site looks so bare.</h2>
+                <p>If you're coming here from the wonderful <a href="http://responsivedesignweekly.com">Responsive Design Weekly</a>, or maybe just on your own, I'm embarrassed to admit my site is a bit of a mess at the moment. Wanting to try something completely new and needing to feed a powerful hunger for <em>git</em> and <em>markdown</em>, I decided to start completely afresh on my site and go with Jekyll hosted on Github Pages. As <a href="https://twitter.com/justinavery">Justin</a> highlighted in the newsletter, I have been working on the design aspect of this update for a while now, but haven't had the time or the kick up the ass to get to it and get it done. What better motivation than shiny, new technology? ... So anyway, basically I migrated my domain over to Github with the barebones of a template and absolutely no content whatsoever, so please bear with whatever state you are reading this in. :)</p>
+                <blockquote class="twitter-tweet" data-link-color="#5f8aa6" data-conversation="none"><p>@<a href="https://twitter.com/alcattell">alcattell</a> @<a href="https://twitter.com/justinavery">justinavery</a> Massive congratulations! Well-deserved through and through.</p>&mdash; Chris Burnell (@iamchrisburnell) <a href="https://twitter.com/iamchrisburnell/status/340485031862616065">May 31, 2013</a></blockquote>
+                <p>Here's what I'm talking about:</p>
+                <blockquote class="twitter-tweet" data-link-color="#5f8aa6" data-conversation="none"><p><a href="https://twitter.com/search/%23netawards">#netawards</a> @<a href="https://twitter.com/justinavery">justinavery</a> @<a href="https://twitter.com/laurakalbag">laurakalbag</a> with their awards <a href="http://t.co/kmdyzhqTGz" title="http://twitter.com/alcattell/status/340488996499099648/photo/1">twitter.com/alcattell/stat…</a></p>&mdash; Alister Cattell (@alcattell) <a href="https://twitter.com/alcattell/status/340488996499099648">May 31, 2013</a></blockquote>
+            </div>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+            <ul class="articles-list">
+                {% for post in paginator.posts %}
+                <li>
+                    <h1 class="article-link"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+                    <h3>{{ post.date | date: "%b %d, %Y" }}</h3>
+                    <p class="article-introduction">{{ post.introduction }}</p>
+                    <a href="{{ post.url }}" class="button">Read more</a>
+                </li>
+                {% endfor %}
+            </ul>
 
-    <title>Heroicbodhisattva</title>
-  </head>
+            <!--ol class="nav  pagination">
+                <li class="pagination__prev">
+                    {% if paginator.previous_page %}
+                    {% if paginator.previous_page == 1 %}
+                        <a href="/">Previous</a>
+                    {% else %}
+                        <a href="/page{{paginator.previous_page}}">Previous</a>
+                    {% endif %}
+                    {% else %}
+                        Previous
+                    {% endif %}
+                </li><!-*
 
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/heroicbodhisattva/heroicbodhisattva">View on GitHub</a>
-
-          <h1 id="project_title">Heroicbodhisattva</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/heroicbodhisattva/heroicbodhisattva/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/heroicbodhisattva/heroicbodhisattva/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
-<a name="heroicbodhisattva" class="anchor" href="#heroicbodhisattva"><span class="octicon octicon-link"></span></a>heroicbodhisattva</h1>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Heroicbodhisattva maintained by <a href="https://github.com/heroicbodhisattva">heroicbodhisattva</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
-</html>
+             *-><li class="pagination__next">
+                    {% if paginator.next_page %}
+                        <a href="/page{{paginator.next_page}}">Next</a>
+                    {% else %}
+                        Next
+                    {% endif %}
+                </li>
+            </ol-->
