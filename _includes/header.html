@@ -1,26 +1,5 @@
 <!DOCTYPE html>
 
-<!--N
-  DIIII8
-    N7III7Z
-      $IIIII78
-       $IIIII7
-       NIIIIIIZ               N
-        77IIIII             D $D
-        87IIIII7         DN Z$O$ $
-         7IIIIIIZ     $Z8NI7NIIIO7
-          8IIIIII77I77IIIIIIIIIIII
-           N7IIIIIIIIIIIIIIIIIIIII
-7DN      O777IIIIIIIIIIIIIIII7$7$N
- III7I7O$IIIIIIIIIIIIIIIII7O
-  O7IIIIIIIIIIIIIIIIIII7ZN
-   8$IIIIIIIIIIIIIIIIIII7
-     NO$IIIIIIIIII777IIIIN
-            7DZIZ     7I$
-          NOI7N        7Z
-           8NZ
-           -->
-
 <html lang="en" class="{{ page.page_class }}">
 <head>
     <meta charset="UTF-8">
@@ -28,32 +7,21 @@
 
     <!-- Prefetch DNS for external assets (Analytics, Typekit, etc.) -->
     <link rel="dns-prefetch" href="//www.google-analytics.com">
-    <link rel="dns-prefetch" href="//cdn.api.twitter.com">
 
-    <title>{{ site.author }} &ndash; {{ page.title }}</title>
+    <title>{{ site.title }} &ndash; {{ page.title }}</title>
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.min.css">
-    <link rel="stylesheet" href="/css/ravenous.min.css">
+    <link rel="stylesheet" href="/css/heroic.min.css">
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-    <script type="text/javascript">
-      (function() {
-        var config = {
-            kitId: 'bbn1puz',
-            scriptTimeout: 3000
-        };
-        var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
-      })();
-    </script>
-    <script src="/js/core.min.js"></script>
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <!--script src="/js/core.min.js"></script-->
     <!--[if lt IE 9]>
         <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
     <![endif]-->
 
     <link rel="shortcut icon" href="/icon.png">
     <link rel="apple-touch-icon-precomposed" href="/icon.png">
-    <meta name="apple-mobile-web-app-title" content="chrisburnell">
+    <meta name="apple-mobile-web-app-title" content="Heroic Bodhisattva">
     <meta name="description" content="{{ site.description }}">
 
      <link rel="alternate" type="application/xml" href="{{ site.url }}/feed.xml">
@@ -62,7 +30,7 @@
 <body>
 
     <header class="wrap  clear">
-        <a href="{{ site.url }}" class="logo  no-select"><span>{{ site.author }}</span></a>
+        <a href="{{ site.url }}" class="logo  no-select"><span>{{ site.title }}</span></a>
         <nav role="navigation">
             <ul class="site-nav">
                 <li class="site-nav-home"><a href="/">Home</a></li><!--
