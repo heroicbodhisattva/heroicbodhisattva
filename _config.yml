@@ -1,0 +1,22 @@
+title: Heroic Bodhisattva
+description: We have much land to traverse, and an infinite amount of time to traverse it, but let us save time and take great heroic leaps.
+author: Russell Walker
+url: http://heroicbodhisattva.net
+
+destination: ./_site
+plugins: ./_plugins
+layouts: ./_layouts
+
+include: ['.htaccess']
+exclude: []
+
+auto: true
+future: false
+permalink: /articles/:title
+paginate: 10
+paginate_path: 'page:num'
+
+markdown: rdiscount
+rdiscount:
+  extensions: [smart]
+markdown_ext: markdown,mkd,mkdn,md
