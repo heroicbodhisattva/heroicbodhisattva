@@ -32,9 +32,9 @@ html, body {
 }
 body {
     background: @@LIGHTCOLOR;
-    color: #4f4f4f;
+    color: @@DARKCOLOR;
     position: relative;
-    font: 400 normal 16px/1.618em "Noticia Text", serif;
+    font: 400 normal 16px/1.618em "Roboto Slab", serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
@@ -96,7 +96,7 @@ img, a > img {
 
 blockquote {
     font-style: italic;
-    color: #6f6f6f;
+    color: @@MEDCOLOR;
 }
     .blockquote:before,
     .blockquote:after {
@@ -204,6 +204,7 @@ footer {
     *:hover .debug * { background: rgba(0,0,0,.3); outline: 1px solid rgba(0,0,0,.5); }
 
 strong, .bold { font-weight: 600; }
+.light { font-weight: 300; }
 .italic { font-style: italic; }
 .small { font-size: small; }
 
