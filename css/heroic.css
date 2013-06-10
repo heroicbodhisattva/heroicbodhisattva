@@ -9,7 +9,7 @@
  */
 
 /*
-    light color:    #e6d0a8
+    light color:    #f0e6dd
     med color:      #998561
     dark color:     #2e2a22
     main green:     #478a71
@@ -126,13 +126,13 @@ hr {
     display: block;
 }
 
-/* ---- 04. Buttons ---- */
+/* ---- ##. Buttons ---- */
 
 button, .button {
 
 }
 
-/* ---- 05. Header ---- */
+/* ---- ##. Header ---- */
 
 header {
 
@@ -141,13 +141,30 @@ header {
 
     }
 
-/* ---- 06. Navigation ---- */
+/* ---- ##. Navigation ---- */
 
 nav {
 
 }
 
-/* ---- 07. Articles ---- */
+/* ---- ##. Hero ---- */
+
+.hero {
+    background-color: #478a71;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #478a71), color-stop(100%, #175a41));
+    background-image: -webkit-linear-gradient(top, #478a71 0%, #175a41 100%);
+    background-image:    -moz-linear-gradient(top, #478a71 0%, #175a41 100%);
+    background-image:         linear-gradient(top, #478a71 0%, #175a41 100%);
+    color: #f0e6dd;
+    display: block;
+    width: 100%;
+    padding: 1.25em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    box-sizing:         border-box;
+}
+
+/* ---- ##. Articles ---- */
 
 .content {
 
@@ -174,19 +191,19 @@ article {
         left: 0;
     }
 
-/* ---- 08. Asides ---- */
+/* ---- ##. Asides ---- */
 
 aside {
 
 }
 
-/* ---- 11. Footer ---- */
+/* ---- ##. Footer ---- */
 
 footer {
 
 }
 
-/* ---- 12. Miscellaneous ---- */
+/* ---- ##. Miscellaneous ---- */
 
 .symbol { vertical-align: middle; font-family: "Entypo" !important; font-size: 2em; font-style: normal !important; }
 
