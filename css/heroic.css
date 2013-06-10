@@ -130,8 +130,6 @@ header {
     margin: 1em 0;
 }
     .logo {
-        background: url("/img/logo.svg") center top no-repeat;
-        background-size: 3em 3em;
         font-size: 4em;
         padding-top: 2.75em;
         line-height: 1em;
@@ -140,6 +138,37 @@ header {
         text-align: center;
         text-shadow: 0 0 .1em #e6d0a8;
     }
+        .logo:after {
+            background: url("/img/logo.svg") center top no-repeat;
+            background-size: 12em 12em;
+            width: 12em;
+            height: 12em;
+            z-index: 0;
+            content: "";
+            display: block;
+            -webkit-animation: rotateClockwise 60s infinite;
+            animation:         rotateClockwise 60s infinite;
+        }
+            @keyframes rotateClockwise {
+                0% {
+                    -webkit-transform: rotate3d(0deg);
+                    transform:         rotate3d(0deg);
+                }
+                1000% {
+                    -webkit-transform: rotate3d(360deg);
+                    transform:         rotate3d(360deg);
+                }
+            }
+            @-webkit-keyframes rotateClockwise {
+                0% {
+                    -webkit-transform: rotate3d(0deg);
+                    transform:         rotate3d(0deg);
+                }
+                1000% {
+                    -webkit-transform: rotate3d(360deg);
+                    transform:         rotate3d(360deg);
+                }
+            }
 
 /* ---- ##. Navigation ---- */
 
