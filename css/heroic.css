@@ -131,7 +131,7 @@ header {
 }
     .logo {
         font-size: 4em;
-        padding-top: 2.75em;
+        padding-top: 3em;
         line-height: 1em;
         display: block;
         width: 100%;
@@ -139,21 +139,29 @@ header {
         position: relative;
         text-shadow: 0 0 .1em #e6d0a8;
     }
+        .logo span {
+            z-index: 1;
+        }
         .logo:after {
-            background: url("/img/logo.svg");
+            background: url("/img/logo.svg") center center no-repeat;
             background-size: 3em 3em;
-            width: 3em;
-            height: 3em;
+            width: 3.2em;
+            height: 3.2em;
             position: absolute;
             top: 0;
             left: 50%;
-            margin-left: -1.5em;
+            margin-left: -1.6em;
             z-index: 0;
             content: "";
             display: block;
-            -webkit-animation: rotateClockwise 60s infinite;
-            animation:         rotateClockwise 60s infinite;
+            -webkit-transition: all .25s ease-in-out;
+            transition:         all .25s ease-in-out;
+            -webkit-animation: rotateClockwise 60s linear infinite;
+            animation:         rotateClockwise 60s linear infinite;
         }
+            .logo:hover:after {
+                background-size: 3.2em 3.2em;
+            }
             @keyframes rotateClockwise {
                 0% {
                     -webkit-transform: rotate(0deg);
