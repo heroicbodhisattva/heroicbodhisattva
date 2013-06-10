@@ -127,14 +127,13 @@ button, .button {
 /* ---- ##. Header ---- */
 
 header {
-    margin-bottom: 1em;
+    margin: 1em 0;
 }
     .logo {
         background: url("/img/logo.svg") center top no-repeat;
         background-size: 3em 3em;
         font-size: 4em;
         padding-top: 2.75em;
-        margin: .25em 0;
         line-height: 1em;
         display: block;
         width: 100%;
