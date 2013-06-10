@@ -12,7 +12,7 @@
     light color:    #f0e6dd
     med color:      #998561
     dark color:     #2e2a22
-    main purple:    #1c0968
+    main purple:    #381952
 */
 
 /* ---- ##. Symbol font-face Load ---- */
@@ -30,9 +30,9 @@
 
 /* ---- ##. General and Typography ---- */
 
-::-webkit-selection { background: #1c0968; color: #f0e6dd; }
-::-moz-selection {    background: #1c0968; color: #f0e6dd; }
-::selection {         background: #1c0968; color: #f0e6dd; }
+::-webkit-selection { background: #381952; color: #f0e6dd; }
+::-moz-selection {    background: #381952; color: #f0e6dd; }
+::selection {         background: #381952; color: #f0e6dd; }
 
 html, body {
     min-height: 100%;
@@ -54,7 +54,7 @@ body {
 }
 
 a {
-    color: #1c0968;
+    color: #381952;
     text-decoration: none;
     -webkit-transition: background .25s ease-in-out, color .25s ease-in-out, text-shadow .25s ease-in-out;
     transition:         background .25s ease-in-out, color .25s ease-in-out, text-shadow .25s ease-in-out;
@@ -127,7 +127,7 @@ button, .button {
 /* ---- ##. Header ---- */
 
 header {
-
+    margin-bottom: 1em;
 }
     .logo {
         font-size: 4em;
@@ -142,11 +142,11 @@ nav {
 /* ---- ##. Hero ---- */
 
 .hero {
-    background-color: #1c0968;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(100%, rgba(0,0,0,.1)));
-    background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,.1) 100%);
-    background-image:    -moz-linear-gradient(top, transparent 0%, rgba(0,0,0,.1) 100%);
-    background-image:         linear-gradient(top, transparent 0%, rgba(0,0,0,.1) 100%);
+    background-color: #381952;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(100%, rgba(0,0,0,.4)));
+    background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,.4) 100%);
+    background-image:    -moz-linear-gradient(top, transparent 0%, rgba(0,0,0,.4) 100%);
+    background-image:         linear-gradient(top, transparent 0%, rgba(0,0,0,.4) 100%);
     color: #f0e6dd;
     display: block;
     width: 100%;
