@@ -186,10 +186,13 @@ nav {
     display: block;
     text-align: center;
 }
-    nav li {
-        float: left;
-        display: inline-block;
+    .site-nav {
+        text-align: center;
     }
+        .site-nav li {
+            display: inline-block;
+            margin: 0 .5em;
+        }
 
 /* ---- ##. Hero ---- */
 
