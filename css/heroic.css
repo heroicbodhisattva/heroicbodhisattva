@@ -130,7 +130,7 @@ header {
     margin-bottom: 1em;
 }
     .logo {
-        background: rgba(230,208,168,.6), url("/img/logo.svg") center top no-repeat;
+        background: url("/img/logo.svg") center top no-repeat;
         background-size: 3em 3em;
         font-size: 4em;
         padding-top: 2.75em;
@@ -141,9 +141,6 @@ header {
         text-align: center;
         text-shadow: 0 0 .1em #e6d0a8;
     }
-        .logo:hover {
-            background: url("/img/logo.svg") center top no-repeat;
-        }
 
 /* ---- ##. Navigation ---- */
 
