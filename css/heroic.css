@@ -130,7 +130,7 @@ header {
     margin-bottom: 1em;
 }
     .logo {
-        background: url("img/logo.svg");
+        background: url("../img/logo.svg");
         font-size: 4em;
     }
 
