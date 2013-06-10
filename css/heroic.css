@@ -136,13 +136,18 @@ header {
         display: block;
         width: 100%;
         text-align: center;
+        position: relative;
         text-shadow: 0 0 .1em #e6d0a8;
     }
         .logo:after {
-            background: url("/img/logo.svg") center top no-repeat;
-            background-size: 12em 12em;
-            width: 12em;
-            height: 12em;
+            background: url("/img/logo.svg");
+            background-size: 3em 3em;
+            width: 3em;
+            height: 3em;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -1.5em;
             z-index: 0;
             content: "";
             display: block;
@@ -151,22 +156,22 @@ header {
         }
             @keyframes rotateClockwise {
                 0% {
-                    -webkit-transform: rotate3d(0deg);
-                    transform:         rotate3d(0deg);
+                    -webkit-transform: rotate(0deg);
+                    transform:         rotate(0deg);
                 }
-                1000% {
-                    -webkit-transform: rotate3d(360deg);
-                    transform:         rotate3d(360deg);
+                100% {
+                    -webkit-transform: rotate(360deg);
+                    transform:         rotate(360deg);
                 }
             }
             @-webkit-keyframes rotateClockwise {
                 0% {
-                    -webkit-transform: rotate3d(0deg);
-                    transform:         rotate3d(0deg);
+                    -webkit-transform: rotate(0deg);
+                    transform:         rotate(0deg);
                 }
-                1000% {
-                    -webkit-transform: rotate3d(360deg);
-                    transform:         rotate3d(360deg);
+                100% {
+                    -webkit-transform: rotate(360deg);
+                    transform:         rotate(360deg);
                 }
             }
 
