@@ -8,6 +8,21 @@
  *  00: Populate me!
  */
 
+/*
+    light color:    #e6d0a8
+    med color:      #998561
+    dark color:     #2e2a22
+    main green:     #478a71
+    light green:    #7dc5a9
+    dark green:     #175a41
+    main blue:      #4c6288
+    light blue:     #839bc3
+    dark blue:      #445066
+    main orange:    #cc8869
+    light orange:   #e6ac92
+    dark orange:    #997361
+*/
+
 /* ---- ##. Symbol font-face Load ---- */
 
 @font-face {
@@ -23,16 +38,16 @@
 
 /* ---- ##. General and Typography ---- */
 
-::-webkit-selection { background: @@MAINCOLOR; color: @@LIGHTCOLOR; }
-::-moz-selection {    background: @@MAINCOLOR; color: @@LIGHTCOLOR; }
-::selection {         background: @@MAINCOLOR; color: @@LIGHTCOLOR; }
+::-webkit-selection { background: #478a71; color: #e6d0a8; }
+::-moz-selection {    background: #478a71; color: #e6d0a8; }
+::selection {         background: #478a71; color: #e6d0a8; }
 
 html, body {
     min-height: 100%;
 }
 body {
-    background: @@LIGHTCOLOR;
-    color: @@DARKCOLOR;
+    background: #e6d0a8;
+    color: #2e2a22;
     position: relative;
     font: 400 normal 16px/1.618em "Roboto Slab", serif;
     text-rendering: optimizeLegibility;
@@ -47,7 +62,7 @@ body {
 }
 
 a {
-    color: @@MAINCOLOR;
+    color: #478a71;
     text-decoration: none;
     -webkit-transition: background .25s ease-in-out, color .25s ease-in-out, text-shadow .25s ease-in-out;
     transition:         background .25s ease-in-out, color .25s ease-in-out, text-shadow .25s ease-in-out;
@@ -96,7 +111,7 @@ img, a > img {
 
 blockquote {
     font-style: italic;
-    color: @@MEDCOLOR;
+    color: #998561;
 }
     .blockquote:before,
     .blockquote:after {
