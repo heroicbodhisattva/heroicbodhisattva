@@ -1,10 +1,10 @@
 /**
- *  Ravenous
- *  The sixth iteration of chrisburnell.com.
- *  by Chris Burnell
+ *  Heroic Bodhisattva
+ *  The first iteration of heroicbodhisattva.net.
+ *  content by Russell Walker
+ *  code by Chris Burnell
  *
  *  Table of Contents:
- *  01: Typekit Preload
  *  02: Symbol font-face Load
  *  03: General and Typography
  *  04: Buttons
@@ -18,26 +18,6 @@
  *  12: Miscellaneous
  *  13: Media Queries
  */
-
-/* ---- 01. Typekit Preload ---- */
-
-/* Hide the fonts from use.typekit.com before they have finished loading */
-.logo, nav, h1, h2, h3, .button {
-    visibility: hidden;
-}
-.wf-active .logo, .wf-active nav, .wf-active h1, .wf-active h2, .wf-active h3, .wf-active .button {
-    -webkit-animation: fadeIn 1s;
-    animation:         fadeIn 1s;
-    visibility: visible;
-}
-@-webkit-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
 
 /* ---- 02. Symbol font-face Load ---- */
 
@@ -68,7 +48,7 @@ body {
     background: #f9f9f9;
     color: #4f4f4f;
     position: relative;
-    font: 400 normal 16px/1.618em "ff-meta-serif-web-pro", serif;
+    font: 400 normal 16px/1.618em "Noticia Text", serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
@@ -103,7 +83,6 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.2em;
 }
 h1 {
-    font-family: "league-gothic", sans-serif;
     font-size: 2.625em;
     text-transform: uppercase;
     text-shadow: .048em .048em 0 rgba(0,0,0,.08);
@@ -118,12 +97,10 @@ h1 {
         }
 h2 {
     margin-bottom: .25em;
-    font-family: "ff-meta-serif-web-pro", sans-serif;
     font-size: 1.375em;
     text-shadow: 0 -1px 0 rgba(255,255,255,.3);
 }
 h3 {
-    font-family: "proxima-nova", serif;
     font-size: 1em; /* override browser default */
     font-weight: 600;
     text-transform: uppercase;
@@ -150,12 +127,12 @@ img, a img {
     border: 0;
 }
 
-blockquote:not(.twitter-tweet) {
+blockquote {
     font-style: italic;
     color: #6f6f6f;
 }
-    .blockquote:not(.twitter-tweet):before,
-    .blockquote:not(.twitter-tweet):after {
+    .blockquote:before,
+    .blockquote:after {
         content: "\0022";
     }
 
