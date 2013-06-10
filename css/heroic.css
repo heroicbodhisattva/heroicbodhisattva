@@ -128,14 +128,13 @@ button, .button {
 
 header {
     margin: 1em 0;
+    text-align: center;
 }
     .logo {
         font-size: 4em;
         padding-top: 3em;
         line-height: 1em;
-        display: block;
-        width: 100%;
-        text-align: center;
+        display: inline-block;
         position: relative;
         text-shadow: 0 0 .1em #e6d0a8;
     }
@@ -151,8 +150,8 @@ header {
             z-index: 1;
             content: "";
             display: block;
-            -webkit-transition: all .25s cubic-bezier(.5,1,1,1);
-            transition:         all .25s cubic-bezier(.5,1,1,1);
+            -webkit-transition: all .25s ease-in-out;
+            transition:         all .25s ease-in-out;
             -webkit-animation: rotateClockwise 60s linear infinite;
             animation:         rotateClockwise 60s linear infinite;
         }
