@@ -130,13 +130,15 @@ header {
     margin-bottom: 1em;
 }
     .logo {
-        background: url("/img/logo.svg") center top no-repeat;
+        background: url("/img/logo.svg") center center no-repeat;
         background-size: 200px 200px;
         font-size: 4em;
-        padding: 200px 0 1em;
-        line-height: 1em;
+        padding: 1em 0;
+        line-height: 2em;
         display: block;
         width: 100%;
+        text-align: center;
+        text-shadow: 0 0 .1em #e6d0a8;
     }
 
 /* ---- ##. Navigation ---- */
