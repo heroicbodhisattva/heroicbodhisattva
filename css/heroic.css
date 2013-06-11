@@ -154,6 +154,8 @@ header {
             transition:         all .25s ease-in-out;
             -webkit-animation: rotateClockwise 60s linear infinite;
             animation:         rotateClockwise 60s linear infinite;
+            -webkit-backface-visibility: hidden;
+            -webkit-perspective: 1000;
         }
             .logo:hover:after {
                 background-size: 3.2em 3.2em;
