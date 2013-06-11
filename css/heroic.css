@@ -160,22 +160,22 @@ header {
             }
             @keyframes rotateClockwise {
                 0% {
-                    -webkit-transform: rotate(0deg);
-                    transform:         rotate(0deg);
+                    -webkit-transform: rotate(0deg), transformZ(0);
+                    transform:         rotate(0deg), transformZ(0);
                 }
                 100% {
-                    -webkit-transform: rotate(360deg);
-                    transform:         rotate(360deg);
+                    -webkit-transform: rotate(360deg), transformZ(0);
+                    transform:         rotate(360deg), transformZ(0);
                 }
             }
             @-webkit-keyframes rotateClockwise {
                 0% {
-                    -webkit-transform: rotate(0deg);
-                    transform:         rotate(0deg);
+                    -webkit-transform: rotate(0deg), transformZ(0);
+                    transform:         rotate(0deg), transformZ(0);
                 }
                 100% {
-                    -webkit-transform: rotate(360deg);
-                    transform:         rotate(360deg);
+                    -webkit-transform: rotate(360deg), transformZ(0);
+                    transform:         rotate(360deg), transformZ(0);
                 }
             }
 
